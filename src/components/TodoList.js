@@ -17,8 +17,8 @@ export default function TodoList() {
   }, []);
 
   const listTodos = todos.map((todo) =>
-    <Card>
-      <Card.Body key={todo.id}>{todo.todo}</Card.Body>
+    <Card key={todo.id}>
+      <Card.Body>{todo.todo}</Card.Body>
     </Card>
   );
   return (
